@@ -25,7 +25,7 @@
         "type" : "LGPL",
         "url" : "https://github.com/dropechostudios/libnoise/blob/master/LICENSE.lesser"
     }],
-    "main": "artifacts/libnoise.js",
+    "main": "artifacts/js/libnoise.js",
     "scripts": {
         "build": "gulp build",
         "test": "gulp test"
