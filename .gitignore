@@ -1,0 +1,5 @@
+node_modules/
+artifacts
+*.swp
+.temp
+node_modules

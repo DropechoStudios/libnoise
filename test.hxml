@@ -1,6 +1,0 @@
--cp test/Sources
--lib libnoise
--lib format
--main Test
--cpp test/build-test/
-

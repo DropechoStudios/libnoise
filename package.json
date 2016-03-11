@@ -1,0 +1,47 @@
+{
+    "name": "libnoise",
+    "description": "",
+    "version": "1.0.0",
+    "homepage": "https://github.com/dropechostudios/libnoise",
+    "author": {
+        "name": "Benjamin Van Treese",
+        "email": "vantreeseba@gmail.com"
+    },
+    "contributors": [{
+        "name": "Mathieu Emilian"
+    }],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/dropechostudios/libnoise.git"
+    },
+    "bugs": {
+        "url": "https://github.com/dropechostudios/libnoise/issues"
+    },
+    "licenses": [{
+        "type" : "GPL",
+        "url" : "https://github.com/dropechostudios/libnoise/blob/master/LICENSE"
+    },
+    {
+        "type" : "LGPL",
+        "url" : "https://github.com/dropechostudios/libnoise/blob/master/LICENSE.lesser"
+    }],
+    "main": "artifacts/libnoise.js",
+    "scripts": {
+        "build": "gulp build",
+        "test": "gulp test"
+    },
+    "dependencies": {
+    },
+    "devDependencies": {
+        "gulp":"*",
+        "gulp-shell":"*",
+        "mkdirp":"*"
+    },
+    "keywords": [
+        "noise",
+        "libnoise",
+        "perlin",
+        "procedural content",
+        "game"
+    ]
+}
