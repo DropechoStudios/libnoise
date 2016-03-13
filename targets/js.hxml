@@ -1,8 +1,8 @@
--cp src
+-cp Sources
 -js artifacts/js/libnoise.js
 
 -D js-es5
 
 # this lines forces the inclusion of all files under the src dir
 # this is most useful in the case of libs with no "main"
---macro include('', true, null, ['src'])
+--macro include('', true, null, ['Sources'])
