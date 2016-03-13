@@ -45,9 +45,9 @@ for (var i = 0; i < size * size * 4; i += 4) {
     //a
     img.data[i + 3] = 255;
 }
-```
 
 ctx.putImageData(img, 0, 0);
+```
 
 #License
 This port is released under the [LGPL licence](https://www.gnu.org/licenses/lgpl.html), see LICENSE and LICENSE.lesser for details.
