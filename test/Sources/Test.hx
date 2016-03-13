@@ -1,4 +1,4 @@
-package libnoise_test;
+package ;
 import libnoise.operator.Add;
 import libnoise.operator.Add;
 import libnoise.operator.Abs;
@@ -43,6 +43,7 @@ import libnoise.QualityMode;
 import libnoise.generator.Perlin;
 
 class Test {
+
 	public static function main() {
 		new Test();
 	}
@@ -257,9 +258,13 @@ class Test {
 		var turb = new Turbulence(10, module);
 		turb.setFrequency(0.03);
 		generate([module, turb], testName);
+
+
+
 	}
 
 	//generate a png containing the image of each modules next of each other
+
 	public function generate(modules : Array<ModuleBase>, name : String) {
 		var timeStart = Timer.stamp();
 
@@ -292,12 +297,8 @@ class Test {
 
 	public function createPng(data : Bytes, w : Int, h : Int, name : String) {
 		var pngData : Data = Tools.buildGrey(w, h, data);
-
-        File.saveContent('$outputPath$name.png', pngData.toString());
-
-        //File.saveBytes( pngData.toString());
-		//var handle : FileOutput = File.write('$outputPath$name.png', true);
-		//var writer : Writer = new Writer(handle);
-		//writer.write(pngData);
+		var handle : FileOutput = File.write('$outputPath$name.png', true);
+		var writer : Writer = new Writer(handle);
+		writer.write(pngData);
 	}
 }
